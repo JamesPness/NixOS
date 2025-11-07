@@ -4,6 +4,8 @@
   imports = [
     ./modules/git.nix
     ./modules/firefox.nix
+    ./modules/swaylock.nix
+    ./modules/swww.nix
   ];
   
   home = { 
@@ -22,5 +24,8 @@
     ];
   };
   
-  xdg.configFile."niri/config.kdl".text = builtins.readFile ../home/modules/niri.kdl;
+  xdg.configFile."niri/config.kdl" = {
+    text = builtins.readFile ./modules/niri.kdl;
+    force = true;
+  };
 }
