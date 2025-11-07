@@ -9,6 +9,7 @@
       yazi
       kitty
       wget
+      xwayland-satellite
     ];
     
     variables = {
@@ -26,5 +27,4 @@
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
   
-  system.stateVersion = "25.05";
 }
