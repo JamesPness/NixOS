@@ -44,7 +44,7 @@
 	    };	    
 	  }
         
-	  ./hardware-configuration.nix
+	  ./hardware/hardware-configuration.nix
           ./boot.nix
 	  ./system/system-modules.nix	
 	  ./system/system-settings.nix
