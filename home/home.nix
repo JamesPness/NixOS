@@ -5,7 +5,7 @@
     ./modules/git.nix
     ./modules/firefox.nix
     ./modules/swaylock.nix
-    ./modules/swww.nix
+    ./modules/kitty.nix
   ];
   
   home = { 
@@ -21,6 +21,7 @@
       signal-desktop
       neofetch
       discord
+      swaybg      
     ];
   };
   

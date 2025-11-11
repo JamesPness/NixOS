@@ -272,9 +272,8 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
+spawn-at-startup "swaybg" "-m" "fit" "-i" "/home/mads/Pictures/wallpaper.png"
 
-spawn-sh-at-startup "swww init"
-spawn-sh-at-startup "swww img ~/Pictures/wallpaper.png"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -358,11 +357,6 @@ gestures {
     }
 }
 
-{
-  wallpaper "/home/mads/nixos/assets/bg_dark.jpg"
-  wallpaper-mode "fill" //options: fill, fit, center, stretch
-}
-
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
@@ -416,8 +410,8 @@ binds {
     Mod+Up    { focus-window-or-workspace-up; }
     Mod+Right { focus-column-right; }
     Mod+H     { focus-column-left; }
-    Mod+J     { focus-window-down; }
-    Mod+K     { focus-window-up; }
+    Mod+J     { focus-window-or-workspace-down; }
+    Mod+K     { focus-window-or-workspace-up; }
     Mod+L     { focus-column-right; }
 
     Mod+Ctrl+Left  { move-column-left; }
