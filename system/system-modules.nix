@@ -4,6 +4,7 @@
   imports = [
     ./modules/fonts.nix
     ./modules/yazi.nix
+    ./modules/niri-session-manager.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -24,5 +25,5 @@
   programs.niri.enable = true;
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
-  services.blueman.enable = true;
+  services.blueman.enable = true;  
 }
