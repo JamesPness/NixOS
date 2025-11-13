@@ -6,6 +6,7 @@
     ./modules/firefox.nix
     ./modules/swaylock.nix
     ./modules/kitty.nix
+    ./modules/jq.nix
   ];
   
   home = { 

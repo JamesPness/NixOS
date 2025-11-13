@@ -43,7 +43,8 @@
 	      extraSpecialArgs = inputs;
 	    };	    
 	  }
-        
+          
+	  ./hardware/bluetooth.nix
 	  ./hardware/hardware-configuration.nix
           ./boot.nix
 	  ./system/system-modules.nix	
