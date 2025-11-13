@@ -7,6 +7,8 @@
     ./modules/swaylock.nix
     ./modules/kitty.nix
     ./modules/jq.nix
+
+    ./services/session-manager.nix
   ];
   
   home = { 

@@ -1,7 +1,7 @@
-{pkgs, config, ...}
+{pkgs, config, ...}:
 
 {
-  packages.jq = {
+  programs.jq = {
     enable = true;
   };
 }
