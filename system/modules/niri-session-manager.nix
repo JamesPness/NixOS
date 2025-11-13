@@ -1,4 +1,4 @@
-{config, niri-session-manager, ...}:
+{config, ...}:
 
 {
   services.niri-session-manager = {
