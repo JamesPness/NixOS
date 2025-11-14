@@ -6,6 +6,7 @@
     ./modules/firefox.nix
     ./modules/swaylock.nix
     ./modules/kitty.nix
+    ./modules/ghostty.nix
   ];
   
   home = { 
@@ -19,9 +20,9 @@
       gdb
       zip
       signal-desktop
-      neofetch
+      fastfetch
       discord
-      swaybg      
+      swaybg
     ];
   };
   
