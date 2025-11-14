@@ -1,4 +1,4 @@
-{config, pkgs, self, lib, ...}:
+{config, pkgs, ...}:
 
 {
   imports = [
@@ -6,7 +6,6 @@
     ./modules/firefox.nix
     ./modules/swaylock.nix
     ./modules/kitty.nix
-    ./modules/nirinit.nix
   ];
   
   home = { 

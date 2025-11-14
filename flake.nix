@@ -14,14 +14,11 @@
 	};
       };
     };
-     
-    niri-session-manager.url = "github:MTeaHead/niri-session-manager";
   };
     
   outputs = inputs@{
     nixpkgs, 
     home-manager,
-    niri-session-manager,
     ...
   }:
 
@@ -40,14 +37,6 @@
       main = nixosSystem {
 	inherit system;
 	modules = [
-          niri-session-manager.nixosModules.niri-session-manager
-
-          ({
-            # Enable the service
-            services.niri-session-manager.enable = true;
-            # Optional: Configure the service
-            
-          })
           home-manager.nixosModules.home-manager
 	  {
 	    home-manager = {
