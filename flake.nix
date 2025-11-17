@@ -8,11 +8,12 @@
     
     home-manager = {
       url = "github:nix-community/home-manager/"; 
-      inputs = {
-	nixpkgs = {
-	  follows = "nixpkgs";
-	};
-      };
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nfsm-flake = {
+      url = "github:gvolpe/nfsm";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
     
@@ -43,7 +44,10 @@
 	      useGlobalPkgs = true;
 	      useUserPackages = true;
 	      users.mads = ./home/home.nix;
-	      extraSpecialArgs = inputs;
+	      extraSpecialArgs = {
+	        inherit system;
+		inherit inputs;
+	      };
 	    };	    
 	  }
           

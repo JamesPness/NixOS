@@ -37,7 +37,9 @@ layout {
         proportion 0.66667
     }
     
-    default-column-width { proportion 0.5; }
+    default-column-width {
+        proportion 0.33333
+    }
     
     focus-ring {
 	
@@ -75,6 +77,7 @@ layout {
 
 spawn-at-startup "waybar"
 spawn-at-startup "swaybg" "-m" "fill" "-i" "/home/mads/Pictures/wallpaper.png"
+spawn-sh-at-startup "nfsm"
 prefer-no-csd
 
 hotkey-overlay {
@@ -239,7 +242,7 @@ binds {
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
     Mod+F { maximize-column; }
-    Mod+Shift+F { fullscreen-window; }
+    Mod+Shift+F { spawn "nfsm-cli"; }
 
     Mod+Ctrl+F { expand-column-to-available-width; }
 
