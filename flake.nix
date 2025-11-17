@@ -51,6 +51,7 @@
 	    };	    
 	  }
           
+	  ./hardware/sound.nix
 	  ./hardware/bluetooth.nix
 	  ./hardware/hardware-configuration.nix
           ./boot.nix

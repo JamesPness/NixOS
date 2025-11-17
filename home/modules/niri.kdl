@@ -38,7 +38,7 @@ layout {
     }
     
     default-column-width {
-        proportion 0.33333
+        proportion 0.5
     }
     
     focus-ring {
