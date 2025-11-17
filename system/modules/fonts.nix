@@ -5,7 +5,12 @@
     packages = with pkgs; [
       comic-mono
       corefonts
-      nerd-fonts.symbols-only
+      fira-code
+      fira-code-symbols
+    ];
+
+    fonts = with pkgs; [
+      nerdfonts
     ];
   };  
 }

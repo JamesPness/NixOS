@@ -15,7 +15,9 @@ input {
     mouse {
         natural-scroll
     }
+
     trackpoint {
+    
     }
 }
 
@@ -38,6 +40,7 @@ layout {
     default-column-width { proportion 0.5; }
     
     focus-ring {
+	
         width 2 
 	active-gradient from="#427b58" to="#427b58" angle=65 relative-to="workspace-view"
         
@@ -55,7 +58,7 @@ layout {
     
     shadow {
         on
-        draw-behind-window true 
+        draw-behind-window false 
         softness 5 
         spread 5 
         offset x=-6 y=3
