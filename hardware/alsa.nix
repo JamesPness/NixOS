@@ -1,10 +1,7 @@
 {config, pkgs, ...}:
 
 {
-  sound = {
+  hardware.alsa = {
     enable = true;
   };
-  boot.extraModprobeConfig = ''
-  options snd slots=snd-hda-intel
-'';
-};
+}

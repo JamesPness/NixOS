@@ -8,7 +8,7 @@ in
     ./modules/firefox.nix
     ./modules/swaylock.nix
     ./modules/kitty.nix
-    ./modules/polybar.nix
+    ./modules/ironbar.nix
   ];
 
   home = { 
