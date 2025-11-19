@@ -8,7 +8,7 @@ in
     ./modules/firefox.nix
     ./modules/swaylock.nix
     ./modules/kitty.nix
-    ./modules/ironbar.nix
+    ./modules/waybar/waybar.nix
   ];
 
   home = { 
@@ -34,4 +34,5 @@ in
     text = builtins.readFile ./modules/niri.kdl;
     force = true;
   };
+  xdg.configFile."waybar/config.jsonc".source = ./modules/waybar.jsonc;
 }
