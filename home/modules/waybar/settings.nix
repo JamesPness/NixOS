@@ -10,11 +10,11 @@
     ];
 
     modules-right = [
+      "backlight"
       "pulseaudio"
       "bluetooth"
       "network"
       "battery"
-      "backlight"
     ];
 
     modules-left = [
