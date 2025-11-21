@@ -51,9 +51,8 @@
 	    };	    
 	  }
           
-	  ./hardware/alsa.nix
 	  ./hardware/bluetooth.nix
-	  ./hardware/pulseaudio.nix
+	  ./hardware/audio.nix
 	  ./hardware/hardware-configuration.nix
           ./boot.nix
 	  ./system/system-modules.nix	
