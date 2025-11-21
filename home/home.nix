@@ -34,5 +34,4 @@ in
     text = builtins.readFile ./modules/niri.kdl;
     force = true;
   };
-  xdg.configFile."waybar/config.jsonc".source = ./modules/waybar.jsonc;
 }
