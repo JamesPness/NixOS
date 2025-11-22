@@ -27,8 +27,12 @@
     system = "x86_64-linux";
     nixosSystem = nixpkgs.lib.nixosSystem;
     users = 
-      builtins.map (name: import (./users + "/${name}"))(
+      builtins.map (name: import (./users/${name}))(
         builtins.attrNames (builtins.readDir ./users)
+      );
+    hardware = 
+      builtins.map (name: import (./hardware/${name}))(
+        builtins.attrNames (builtins.readDir ./hardware)
       );
 
   in
@@ -51,14 +55,12 @@
 	    };	    
 	  }
           
-	  ./hardware/bluetooth.nix
-	  ./hardware/audio.nix
 	  ./hardware/hardware-configuration.nix
           ./boot.nix
 	  ./system/system-modules.nix	
 	  ./system/system-settings.nix
 	  ./nix/nix.nix
-	] ++ users;
+	] ++ users ++ hardware;
       };
     };	
   };
