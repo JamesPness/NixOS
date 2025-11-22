@@ -132,13 +132,13 @@ binds {
     
     Super+Y hotkey-overlay-title="Open a filemanager: Yazi" { spawn "kitty" "yazi"; }
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
     
-    XF86MonBrightnessUp     allow-when-locked=true { spawn "light" "-A" "5"; }
-    XF86MonBrightnessDown     allow-when-locked=true { spawn "light" "-U" "5"; }
+    XF86MonBrightnessUp     allow-when-locked=true { spawn "xbacklight" "-inc" "5"; }
+    XF86MonBrightnessDown     allow-when-locked=true { spawn "xbacklight" "-dec" "5"; }
     
     Mod+O repeat=false { toggle-overview; }
 

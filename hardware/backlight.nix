@@ -1,7 +1,8 @@
 {config, pkgs, ...}:
 
 {
-  programs.light = {
-    enable = true;
+  hardware = {
+    enableRedistributableFirmware = true;
+    acpilight.enable = true; 
   };
 }

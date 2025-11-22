@@ -4,7 +4,7 @@
   users.users.mads = {
     isNormalUser = true;
     description = "Mads";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "video" ];
     packages = with pkgs; [];
   };
 }
