@@ -15,11 +15,17 @@
       url = "github:gvolpe/nfsm";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+     
+    nvf = {
+      url = "github:NotAShelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
     
   outputs = inputs@{
     nixpkgs, 
     home-manager,
+    nvf,
     ...
   }:
 
@@ -42,6 +48,7 @@
       main = nixosSystem {
 	inherit system;
 	modules = [
+	  nvf.homeManagerModules.default
           home-manager.nixosModules.home-manager
 	  {
 	    home-manager = {

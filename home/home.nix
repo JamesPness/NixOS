@@ -1,4 +1,5 @@
 {config, pkgs, inputs, system, ...}:
+
 let 
   inherit (inputs.nfsm-flake.packages.${system}) nfsm nfsm-cli;
 in
@@ -10,6 +11,7 @@ in
     ./modules/kitty.nix
     ./modules/waybar/waybar.nix
     ./modules/fuzzel.nix
+    ./modules/nvf.nix
   ];
 
   home = { 
@@ -17,10 +19,6 @@ in
     homeDirectory = "/home/mads";
     stateVersion = "25.05";
     packages = with pkgs; [
-      libnotify
-      papirus-icon-theme
-      gcc
-      gdb
       zip
       signal-desktop
       fastfetch
