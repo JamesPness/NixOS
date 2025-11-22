@@ -21,6 +21,17 @@
       "niri/workspaces"
     ];
 
+    pulseaudio = {
+      format = "{icon} {volume}%";
+      format-bluetooth = "󰋎 {volume}%"; 
+      format-muted = "";
+      format-icons = [
+       "󰕿"
+       "󰖀"
+       "󰕾"
+      ];
+    };
+
     clock = {
       format = "{:%H:%M}";
       format-alt = "{:%R - %A, %B %d, %Y}";
@@ -52,8 +63,8 @@
     battery = {
       format = "{capacity}% {icon}";
       states = {
-        warning = 40;
-        critical = 20;
+        warning = 20;
+        critical = 10;
       };
       format-plugged = "{capacity}% 󰂄";
       format-icons = [

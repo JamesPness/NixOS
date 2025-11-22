@@ -5,8 +5,9 @@
     packages = with pkgs; [
       comic-mono
       corefonts
+      powerline-fonts
+      powerline-symbols
       nerd-fonts.symbols-only
-      nerd-fonts.fira-code
       font-awesome
     ];
   };  
