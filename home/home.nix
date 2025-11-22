@@ -9,6 +9,7 @@ in
     ./modules/swaylock.nix
     ./modules/kitty.nix
     ./modules/waybar/waybar.nix
+    ./modules/fuzzel.nix
   ];
 
   home = { 
@@ -16,7 +17,6 @@ in
     homeDirectory = "/home/mads";
     stateVersion = "25.05";
     packages = with pkgs; [
-      fuzzel
       libnotify
       gcc
       gdb
