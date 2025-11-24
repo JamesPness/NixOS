@@ -48,7 +48,7 @@
       main = nixosSystem {
 	inherit system;
 	modules = [
-	  nvf.homeManagerModules.default
+	  nvf.nixosModules.default
           home-manager.nixosModules.home-manager
 	  {
 	    home-manager = {
@@ -62,7 +62,6 @@
 	    };	    
 	  }
           
-	  ./hardware/hardware-configuration.nix
           ./boot.nix
 	  ./system/system-modules.nix	
 	  ./system/system-settings.nix

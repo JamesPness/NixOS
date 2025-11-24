@@ -4,6 +4,7 @@
   imports = [
     ./modules/fonts.nix
     ./modules/yazi.nix
+    ./modules/nvf/nvf.nix
     ];
 
   nixpkgs.config.allowUnfree = true;

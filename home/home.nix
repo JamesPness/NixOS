@@ -11,7 +11,6 @@ in
     ./modules/kitty.nix
     ./modules/waybar/waybar.nix
     ./modules/fuzzel.nix
-    ./modules/nvf.nix
   ];
 
   home = { 
