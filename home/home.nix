@@ -1,6 +1,12 @@
-{config, pkgs, inputs, system, ...}:
+{
+  config,
+  pkgs,
+  inputs,
+  system,
+  ...
+}:
 
-let 
+let
   inherit (inputs.nfsm-flake.packages.${system}) nfsm nfsm-cli;
 in
 {
@@ -13,7 +19,7 @@ in
     ./modules/fuzzel.nix
   ];
 
-  home = { 
+  home = {
     username = "mads";
     homeDirectory = "/home/mads";
     stateVersion = "25.05";
@@ -27,7 +33,7 @@ in
       nfsm-cli
     ];
   };
-  
+
   xdg.configFile."niri/config.kdl" = {
     text = builtins.readFile ./modules/niri.kdl;
     force = true;

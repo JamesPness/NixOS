@@ -5,7 +5,7 @@
     ./modules/fonts.nix
     ./modules/yazi.nix
     ./modules/nvf/nvf.nix
-    ];
+  ];
 
   nixpkgs.config.allowUnfree = true;
 
@@ -14,9 +14,9 @@
       neovim
       wget
       xwayland-satellite
-      xclip 
+      wl-clipboard
     ];
-    
+
     variables = {
       EDITOR = "nvim";
     };
