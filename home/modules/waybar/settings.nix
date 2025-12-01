@@ -20,7 +20,7 @@
     modules-left = [
       "niri/workspaces"
     ];
-    
+
     backlight = {
       format = "{icon}{percent}%";
       format-icons = [
@@ -48,16 +48,16 @@
       format-disconnected = "󰤭 - No WIFI";
       format-icons = [
         "󰤯 "
-	"󰤟 "
-	"󰤢 "
-	"󰤥 "
-	"󰤨 "
+        "󰤟 "
+        "󰤢 "
+        "󰤥 "
+        "󰤨 "
       ];
     };
 
     pulseaudio = {
       format = "{icon} {volume}%";
-      format-bluetooth = "󰋎 {volume}%"; 
+      format-bluetooth = "󰋎 {volume}%";
       format-muted = "";
       format-icons = [
         "󰕿"
@@ -70,13 +70,13 @@
       format = "{:%H:%M}";
       format-alt = "{:%R - %A, %B %d, %Y}";
       tooltip-format = "<tt><small>{calendar}</small></tt>";
-    
+
       calendar = {
         mode = "year";
         mode-mon-col = 3;
         weeks-pos = "right";
 
-      format = {
+        format = {
           months = "<span color='#ffead3' font-family = 'Comic Mono'><b>{}</b></span>";
           days = "<span color='#ecc6d9' font-family = 'Comic Mono'><b>{}</b></span>";
           weeks = "<span color='#99ffdd' font-family = 'Comic Mono'><b>W{}</b></span>";
@@ -84,7 +84,7 @@
           today = "<span color='#ff6699' font-family = 'Comic Mono'><b><u>{}</u></b></span>";
         };
       };
-    
+
       actions = {
         on-click-right = "mode";
         on-click-forward = "tz-up";
