@@ -17,6 +17,7 @@ in
     ./modules/kitty.nix
     ./modules/waybar/waybar.nix
     ./modules/fuzzel.nix
+    ./modules/gcc.nix
   ];
 
   home = {
@@ -29,6 +30,7 @@ in
       fastfetch
       discord
       swaybg
+      geckodriver
       nfsm
       nfsm-cli
     ];
