@@ -7,8 +7,12 @@
     ./modules/nvf/nvf.nix
   ];
 
-  nixpkgs.config.allowUnfree = true;
-
+  nixpkgs.config = {
+    allowUnfree = true;
+    permittedInsecurePackages = [
+      "ventoy-1.1.07"
+    ];
+  };
   environment = {
     systemPackages = with pkgs; [
       neovim

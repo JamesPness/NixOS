@@ -17,7 +17,6 @@ in
     ./modules/kitty.nix
     ./modules/waybar/waybar.nix
     ./modules/fuzzel.nix
-    ./modules/gcc.nix
   ];
 
   home = {
@@ -33,6 +32,9 @@ in
       geckodriver
       nfsm
       nfsm-cli
+      gdb
+      clang
+      ventoy-full
     ];
   };
 
